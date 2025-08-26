@@ -17,7 +17,7 @@ const NavItems = () => {
   return (
     <nav className='flex items-center gap-4'>
         {navItems.map(({label, href}) => (
-            <Link href={href} key={label} className={cn(pathName === href && 'text-primary font-semibold p-2 bg-blue-300')}>{label}</Link>
+            <Link href={href} key={label} className={cn(pathName === href && 'text-primary font-semibold p-2 bg-orange-300 rounded-t-lg')}>{label}</Link>
         ))}
     </nav>
   );
